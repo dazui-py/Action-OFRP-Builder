@@ -12,7 +12,7 @@
 ## Notas de Atualização
 
 = 20/04/2023
- * Primeira versão funcional enviada.
+ * Primeira versão funcional lançada.
 
 -----
 
