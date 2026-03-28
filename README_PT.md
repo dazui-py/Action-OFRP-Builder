@@ -22,13 +22,13 @@
 | :--- | :--- | :--- |
 | `SYNC_URL` | Script de sincronização do OrangeFox | https://gitlab.com/OrangeFox/sync.git |
 | `MANIFEST_BRANCH` | Branch do código-fonte (Source) | 12.1 |
-| `DEVICE_TREE_URL` | URL da Device Tree | https://github.com/OrangeFoxRecovery/device_xiaomi_laurel_sprout |
+| `DEVICE_TREE_URL` | URL da Device Tree | https://github.com/dazui-py/A145R-OFox |
 | `DEVICE_TREE_BRANCH` | Branch da Device Tree | fox_12.1 |
-| `DEVICE_PATH` | Caminho da Device Tree | device/xiaomi/laurel_sprout |
+| `DEVICE_PATH` | Caminho da Device Tree | device/samsung/a14m |
 | `COMMON_TREE_URL` | URL da Common Tree | |
 | `COMMON_PATH` | Caminho da Common Tree | |
-| `DEVICE_NAME` | Codename do modelo | laurel_sprout |
-| `MAKEFILE_NAME` | Nome da Makefile | twrp_laurel_sprout |
+| `DEVICE_NAME` | Codename do modelo | a14m |
+| `MAKEFILE_NAME` | Nome da Makefile | twrp_a14m |
 | `BUILD_TARGET` | Partição de destino (boot/recovery/vendorboot) | recovery |
 
 -----
