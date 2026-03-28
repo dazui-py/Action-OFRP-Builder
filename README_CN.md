@@ -1,59 +1,61 @@
-# 使用 Action 编译 Recovery
+# Compilar Recovery via GitHub Actions
 
-- 支持 OrangeFox, TWRP 及其它衍生版本请使用 [Action-TWRP-Builder](https://github.com/azwhikaru/Action-TWRP-Builder)
-
----
-
-## 致谢
-- 所有贡献者
+- Suporte para OrangeFox. Para TWRP e outros derivados, use o [Action-TWRP-Builder](https://github.com/azwhikaru/Action-TWRP-Builder).
 
 ---
 
-## 更新说明
-```
-= 2023/04/20
-- 提交第一个可用版本
-```
+## Agradecimentos
+- Todos os contribuidores
+
+---
+
+## Notas de Atualização
+
+= 20/04/2023
+ * Primeira versão funcional enviada.
 
 -----
 
-## 参数说明
+## Descrição dos Parâmetros
 
-| 参数 | 描述                               | 示例 |
-| ------------ | -------------------- | ------------ |
-| `SYNC_URL` | OrangeFox 提供的同步脚本 | https://gitlab.com/OrangeFox/sync.git |
-| `MANIFEST_BRANCH` | 源码分支 | 12.1                                                         |
-| `DEVICE_TREE_URL` | Device tree URL | https://github.com/OrangeFoxRecovery/device_xiaomi_laurel_sprout |
-| `DEVICE_TREE_BRANCH` | Device tree 分支 | fox_12.1 |
-| `DEVICE_PATH` | Device tree 位置 | device/xiaomi/laurel_sprout |
-| `COMMON_TREE_URL` | Common tree URL |  |
-| `COMMON_PATH` | Common tree 位置 |  |
-| `DEVICE_NAME` | 机型 | laurel_sprout |
-| `MAKEFILE_NAME` | Makefile 名称 | twrp_laurel_sprout |
-| `BUILD_TARGET` | 编译目标(boot/recovery/vendorboot) | recovery |
+| Parâmetro | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `SYNC_URL` | Script de sincronização do OrangeFox | https://gitlab.com/OrangeFox/sync.git |
+| `MANIFEST_BRANCH` | Branch do código-fonte (Source) | 12.1 |
+| `DEVICE_TREE_URL` | URL da Device Tree | https://github.com/OrangeFoxRecovery/device_xiaomi_laurel_sprout |
+| `DEVICE_TREE_BRANCH` | Branch da Device Tree | fox_12.1 |
+| `DEVICE_PATH` | Caminho da Device Tree | device/xiaomi/laurel_sprout |
+| `COMMON_TREE_URL` | URL da Common Tree | |
+| `COMMON_PATH` | Caminho da Common Tree | |
+| `DEVICE_NAME` | Codename do modelo | laurel_sprout |
+| `MAKEFILE_NAME` | Nome da Makefile | twrp_laurel_sprout |
+| `BUILD_TARGET` | Partição de destino (boot/recovery/vendorboot) | recovery |
 
 -----
 
-## 如何使用
-```
-例如你的 Github 用户名是 "JohnSmith"
-```
-#### 1. 点击当前仓库右上角的 "Fork" 按钮
+## Como usar
+
+Exemplo: se o seu usuário do GitHub for "JohnSmith"
+#### 1. Clique no botão "Fork" no canto superior direito deste repositório
 ![image](https://user-images.githubusercontent.com/37921907/177914706-c92476c5-7e14-4fb3-be94-0c8a11dae874.png)
-#### 2. 等待自动重定向后，你将会看到你的用户名
+
+#### 2. Aguarde o redirecionamento automático; você verá o seu próprio nome de usuário
 ![image](https://user-images.githubusercontent.com/37921907/177915106-5bde6fc9-303c-479e-b290-22b48efd1e4e.png)
+
 -----
 
-## 开始编译 Recovery
-#### 9. 进入 "Actions-Recovery Build"
+## Iniciando a Compilação da Recovery
+#### 9. Vá para "Actions" -> "Recovery Build"
 ![image](https://user-images.githubusercontent.com/37921907/177915304-8731ed80-1d49-48c9-9848-70d0ac8f2720.png)
-#### 10. 点击 "Run workflow" 并按照参数说明内的描述填写参数
+
+#### 10. Clique em "Run workflow" e preencha conforme a "Descrição dos Parâmetros" acima
 ![image](https://user-images.githubusercontent.com/37921907/177915346-71c29149-78fb-4a00-996f-5d84ffc9eb8c.png)
-#### 11. 填写完毕后, 点击 "Run workflow" 开始运行
+
+#### 11. Após preencher, clique em "Run workflow" para iniciar a execução
 
 -----
 
-## 编译结果
-可以在 [Release](../../releases) 下载
+## Resultados da Compilação
+Os arquivos podem ser baixados em [Releases](../../releases).
 
-文件没有被上传到 Release？请检查步骤 "Check the output directory before uploading" 并检查文件名
+> **O arquivo não foi enviado para a Release?** > Verifique a etapa "Check the output directory before uploading" nos logs e confira se o nome do arquivo gerado corresponde ao esperado.
