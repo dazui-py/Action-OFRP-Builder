@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/dazui-py/A145R-OFox'
+        default: 'https://github.com/dazui-py/android_device_samsung_a14m'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'a14mnsxx-user-15-AP3A.240905.015.A2-A145RXXSCDZA1-release-keys'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
